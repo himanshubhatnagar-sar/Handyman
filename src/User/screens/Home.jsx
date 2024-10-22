@@ -64,11 +64,11 @@ const Home = () => {
               <FontAwesome5 name="box" size={20} color={"black"} />
             ),
           }}/>
-          <Tab.Screen name="shop" component={Shop} options={{
+          {/* <Tab.Screen name="shop" component={Shop} options={{
             tabBarIcon: () => (
               <Entypo name="shop" size={20} color={"black"} />
             ),
-          }}/>
+          }}/> */}
         </Tab.Navigator>
         // </NavigationContainer>
     // </View>
