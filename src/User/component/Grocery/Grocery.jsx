@@ -1,4 +1,4 @@
-import { Image, ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
+import { Dimensions, Image, ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 import AntDesign from 'react-native-vector-icons/AntDesign'
 import Feather from 'react-native-vector-icons/Feather'
@@ -11,8 +11,8 @@ import HouseholdEssentials from './HouseholdEssentials'
 
 const Grocery = () => {
   return (
-    <ScrollView style={{backgroundColor:"#FFF"}}>
-        <View style={{paddingHorizontal:10,backgroundColor:"#f1b407",borderBottomLeftRadius:20,borderBottomRightRadius:20}}>
+    <ScrollView style={{backgroundColor:"#fad022",height:Dimensions.get("window").height}}>
+        {/* <View style={{paddingHorizontal:10,backgroundColor:"#f1b407",borderBottomLeftRadius:20,borderBottomRightRadius:20}}>
             <View>
                 <Text style={{fontSize:12,fontWeight:"700",color:"#313432"}}>Delivery In</Text>
             </View>
@@ -76,7 +76,18 @@ const Grocery = () => {
         <GroceryKitchen />
         <SnacksDrinks />
         <BeauryPersonalCare />
-        <HouseholdEssentials />
+        <HouseholdEssentials /> */}
+        <View style={{justifyContent:"center",alignItems:"center",marginTop:100}}>
+                <Text style={{color:"#000",fontWeight:"700",fontSize:50}}>Handyman</Text>
+                <Text style={{color:"#000",fontWeight:"700",fontSize:50}}>Household</Text>
+                <View style={{backgroundColor:"#FFF",marginVertical:30,marginHorizontal:20,borderRadius:10}}>
+                    <Text style={{marginHorizontal:30,marginTop:50, fontSize:18}}>Need reliable household help? Handyman Helpers offers a network of skilled and certified helpers, including cooks, cleaners, and caretakers. Each helper is verified through Aadhaar and PAN to ensure your trust and safety. Now, you can access dependable services for your home with flexible, monthly contracts and enjoy peace of mind with Handyman Helpers.</Text>
+                    <View style={{backgroundColor:"#fef9c2",marginHorizontal:20,marginVertical:30,paddingHorizontal:20,borderLeftWidth:3,borderColor:"#f1b407"}}>
+                        <Text style={{color:"#000",fontWeight:"700",fontSize:40,marginTop:30}}>COMING SOON!</Text>
+                        <Text style={{marginBottom:30}}>We're working hard to bring you the best service. Stay tuned</Text>
+                    </View>
+                </View>
+        </View>
     </ScrollView>
   )
 }
